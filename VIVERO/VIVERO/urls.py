@@ -1,3 +1,5 @@
+#Almacena la URLS y los resultados detras de cada acceso 
+
 """VIVERO URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -15,7 +17,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+#Importamos las vistas 
+from VIVERO.views import bienvenida
 
+#Configuracion de las URLS
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),    #Panel de administración 
+    path('Bienvenida/',bienvenida), 
 ]

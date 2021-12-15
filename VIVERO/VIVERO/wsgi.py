@@ -1,3 +1,4 @@
+#Archivo relativo al servidor web a utilizar
 """
 WSGI config for VIVERO project.
 
